@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>Test Layout</title>
@@ -41,4 +41,46 @@
         </div>
     </body>
 </html>
+ -->
 
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+<script>
+$(function () {
+  $('.pr-price').hide();
+  $('.d2').show();
+    
+  $('#select').on("change",function () {
+    $('.pr-price').hide();
+    $('.d'+$(this).val()).show();
+  }).val("2");
+});
+</script>
+        
+</head>
+    <body>
+
+<select id="select" name="cd-dropdown" class="cd-select">
+<option value="-1" selected>Currency</option>
+<option value="1">Dollar $</option>
+<option value="2">Pound £</option>
+<option value="3">Rupees </option>
+<option value="4">Dirham </option>
+</select>
+
+<div class="pr-price d1">$100</div>
+<div class="pr-price d2">£200</div>
+<div class="pr-price d3">Rs300</div>
+<div class="pr-price d4">D400</div>
+<br>
+<div class="pr-price d1">$100</div>
+<div class="pr-price d2">£200</div>
+<div class="pr-price d3">Rs300</div>
+<div class="pr-price d4">D400</div>
+
+</body>
+</html>
