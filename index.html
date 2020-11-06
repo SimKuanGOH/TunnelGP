@@ -168,6 +168,8 @@ $(function () {
   $('#select').on("change",function () {
     // $('.pr-price').hide();
     // $('.d'+$(this).val()).show();
+    $('.d1').empty();
+    $('.d1').val("Loading...");
     $('.d1').load('https://simkuangoh.github.io/TunnelGP/'+$(this).val()+'.html');
   }).val("2");
 });
@@ -175,8 +177,8 @@ $(function () {
         
 </head>
     <body>
-        <h1>Tunnel Gaussian Process</h1>
-        <h2>Interactive Visualization of 4D Landing Parameters</h2>
+        <!-- <h1>Tunnel Gaussian Process</h1>
+        <h2>Interactive Visualization of 4D Landing Parameters</h2> -->
 <h5>
 TGP's Parameters and Aircraft Category : <select id="select" name="cd-dropdown" class="cd-select">
 <option selected value="vx_M">S<sub>x</sub> and Medium</option>
@@ -187,8 +189,10 @@ TGP's Parameters and Aircraft Category : <select id="select" name="cd-dropdown" 
 <option value="vh_H">S<sub>h</sub> and Heavy</option>
 </select>
 </h5>
-<div class="pr-price d1" id="c">Loading...</div>
-
+<div style="max-height:300px">
+<div class="pr-price d1" id="c" >Loading...</div>
+</div>
+<h5>b</h5>
 
 </body>
 </html>
