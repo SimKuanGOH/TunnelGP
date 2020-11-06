@@ -1,141 +1,3 @@
-<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title>Test Layout</title>
-        <style type="text/css">
-            body, html
-            {
-                margin: 0; padding: 0; height: 100%; overflow: hidden;
-            }
-
-            #content
-            {
-                position:relative; left: 0; right: 0; bottom: 0; top: 0; 
-            }
-            #c
-            {
-            width: 100%;text-align: center;
-            }
-            h1, h2
-            {
-            text-align: center;
-            }
-        </style>
-    </head>
-    <body>
-    	<h1>Tunnel Gaussian Process</h1>
-        <h2>Interactive Visualization of 4D Landing Parameters</h2>
-    	<div id="c">
-        <form name="change">TGP's Parameters and Aircraft Category : 
-        <SELECT NAME="options" ONCHANGE="document.getElementById('youriframe').src = this.options[this.selectedIndex].value">
-        <option value="https://simkuangoh.github.io/TunnelGP/vx_M.html">S<sub>x</sub> and Medium</option>
-        <option value="https://www.facebook.com">S<sub>y</sub> and Medium</option>
-        <option value="https://www.facebook.com">S<sub>h</sub> and Medium</option>
-        <option value="https://simkuangoh.github.io/TunnelGP/vx_H.html">S<sub>x</sub> and Heavy</option>
-        <option value="https://www.facebook.com">S<sub>y</sub> and Heavy</option>
-        <option value="https://www.facebook.com">S<sub>h</sub> and Heavy</option>
-        </SELECT></form>
-        </div>
-        <div id="content">
-            <iframe width="100%" height="100%" frameborder="0" src="https://simkuangoh.github.io/TunnelGP/vx_M.html" />
-        </div>
-    </body>
-</html>
- -->
-
-
-
-
-<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script>
-$(function () {
-  $('.pr-price').hide();
-  $('.d2').show();
-    
-  $('#select').on("change",function () {
-    $('.pr-price').hide();
-    $('.d'+$(this).val()).show();
-    $('.d'+$(this).val()).load('https://simkuangoh.github.io/TunnelGP/vx_M.html');
-  }).val("2");
-});
-</script>
-        
-</head>
-    <body>
-
-<select id="select" name="cd-dropdown" class="cd-select">
-<option value="-1" selected>Currency</option>
-<option value="1">Dollar $</option>
-<option value="2">Pound £</option>
-<option value="3">Rupees </option>
-<option value="4">Dirham </option>
-</select>
-
-<div class="pr-price d1">$100</div>
-<div class="pr-price d2">£200</div>
-<div class="pr-price d3">Rs300</div>
-<div class="pr-price d4">D400</div>
-<br>
-<div class="pr-price d1">$100</div>
-<div class="pr-price d2">£200</div>
-<div class="pr-price d3">Rs300</div>
-<div class="pr-price d4">D400</div>
-
-</body>
-</html> -->
-
-
-<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <title>Test Layout</title>
-        <style type="text/css">
-            body, html
-            {
-                margin: 0; padding: 0; height: 100%; overflow: hidden;
-            }
-
-            #content
-            {
-                position:relative; left: 0; right: 0; bottom: 0; top: 0; 
-            }
-            #c
-            {
-            width: 100%;text-align: center;
-            }
-            h1, h2
-            {
-            text-align: center;
-            }
-        </style>
-    </head>
-    <body>
-        <h1>Tunnel Gaussian Process</h1>
-        <h2>Interactive Visualization of 4D Landing Parameters</h2>
-        <div id="c">
-        <form name="change">TGP's Parameters and Aircraft Category : 
-        <SELECT NAME="options" ONCHANGE="document.getElementById('youriframe').src = this.options[this.selectedIndex].value">
-        <option value="https://simkuangoh.github.io/TunnelGP/vx_M.html">S<sub>x</sub> and Medium</option>
-        <option value="https://www.facebook.com">S<sub>y</sub> and Medium</option>
-        <option value="https://www.facebook.com">S<sub>h</sub> and Medium</option>
-        <option value="https://simkuangoh.github.io/TunnelGP/vx_H.html">S<sub>x</sub> and Heavy</option>
-        <option value="https://www.facebook.com">S<sub>y</sub> and Heavy</option>
-        <option value="https://www.facebook.com">S<sub>h</sub> and Heavy</option>
-        </SELECT></form>
-        </div>
-        <div id="content">
-            <iframe width="100%" height="100%" frameborder="0" src="https://simkuangoh.github.io/TunnelGP/vx_M.html" />
-        </div>
-    </body>
-</html>
- -->
-
-
-
-<!-- <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> -->
 <html xmlns="http://www.w3.org/1999/xhtml">
     <head>
         <title>TGP</title>
@@ -163,16 +25,17 @@ $(function () {
 $(function () {
   // $('.pr-price').hide();
   // $('.d2').show();
+  //$("#select").prop("selectedIndex", 1);
   $('.d1').load('https://simkuangoh.github.io/TunnelGP/vx_M.html');
     
   $('#select').on("change",function () {
     // $('.pr-price').hide();
     // $('.d'+$(this).val()).show();
-    $('.d1').empty();
+    // $('.d1').empty();
     $('.d1').val("Loading...");
     $('.d1').load('https://simkuangoh.github.io/TunnelGP/'+$(this).val()+'.html');
     // $('.plotly-graph-div').css('height', 80);
-  }).val("2");
+  });
 });
 </script>
         
@@ -181,7 +44,8 @@ $(function () {
         <h1>Tunnel Gaussian Process</h1>
         <h2>Interactive Visualization of 4D Landing Parameters</h2>
 <h5>
-TGP's Parameters and Aircraft Category : <select id="select" name="cd-dropdown" class="cd-select">
+TGP's Parameters and Aircraft Category : 
+<select id="select" name="cd-dropdown" class="cd-select">
 <option selected value="vx_M">S<sub>x</sub> and Medium</option>
 <option value="vy_M">S<sub>y</sub> and Medium</option>
 <option value="vh_M">S<sub>h</sub> and Medium</option>
@@ -197,6 +61,3 @@ TGP's Parameters and Aircraft Category : <select id="select" name="cd-dropdown" 
 
 </body>
 </html>
-
-
-
