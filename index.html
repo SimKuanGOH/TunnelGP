@@ -157,9 +157,6 @@ $(function () {
             {
                 text-align: center;
             }
-            .plotly-graph-div{
-                height:80%
-            }
         </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
@@ -174,6 +171,7 @@ $(function () {
     $('.d1').empty();
     $('.d1').val("Loading...");
     $('.d1').load('https://simkuangoh.github.io/TunnelGP/'+$(this).val()+'.html');
+    // $('.plotly-graph-div').css('height', 80);
   }).val("2");
 });
 </script>
